@@ -1,58 +1,59 @@
-### Gradle ###
-.gradle/
+HELP.md
+.gradle
 build/
 !gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-### Maven & Gradle wrapper logs ###
-.mvn/
-**/mvnw
-**/mvnw.cmd
+# Gradle Wrapper
+gradle/wrapper/gradle-wrapper.jar
 gradle/wrapper/gradle-wrapper.properties
 
-### IDEs ###
-.idea/
-*.iml
-*.ipr
-*.iws
-*.launch
-*.class
-*.project
-*.classpath
-.vscode/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+# Generated files
+/generated/
 
-### OS ###
+# Temporary files
+*.tmp
+*.temp
+
+# OS files
 .DS_Store
 Thumbs.db
 
-### Logs ###
+# Logs
 *.log
 
-### Spring Boot ###
-spring.log
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
 
-### Node / NPM (if front-end code included) ###
-node_modules/
-dist/
+### IntelliJ IDEA ###
 
-### Tests ###
-test-output/
+.idea/
+*.iml
+*.iws
+out/
 
-### Others ###
-*.tmp
-*.bak
-*.orig
-*.rej
+*.iws
+*.iml
+*.ipr
+!**/src/main/**/out/
+!**/src/test/**/out/
 
-### Local environment ###
-.env
-*.local
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
 
-### Docker ###
-*.pid
-*.seed
-docker-compose.override.yml
+### VS Code ###
+.vscode/
